@@ -10,15 +10,18 @@ public class University implements DisplayItem {
 
     private String name;
 
+    private String imageUrl;
+
     //private RealmList<Student> students;
 
     public University(){
 
     }
 
-    public University(String id, String name) {
+    public University(String id, String name,String imageUrl) {
         this.id = id;
         this.name = name;
+        this.imageUrl = imageUrl;
     }
 
     @Override
@@ -37,6 +40,15 @@ public class University implements DisplayItem {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
 
     //public List<Student> getStudents() {
       //  return students;
